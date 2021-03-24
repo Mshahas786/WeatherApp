@@ -16,8 +16,8 @@ $(document).ready(function () {
           '<div class="card">' +
             '<img src="https://openweathermap.org/img/wn/'+ result.list[i].weather[0].icon +'@2x.png" class="card-img-top" style= "width: 50px height:50px" alt="weather icon" />' +
             '<div class="card-body">' +
-            '<h1 class="card-title text-center">' + Math.round(result.list[i].main.temp - 273.15) +'<sup>&deg;c</sup></h1>' +
-            '<h3 class="card-title text-center">' +result.list[i].name +'</h3>' +
+            '<h1 class="card-title text-center text-light">' + Math.round(result.list[i].main.temp - 273.15) +'<sup>&deg;c</sup></h1>' +
+            '<h3 class="card-title text-center">' +result.list[i].name + ', ' +result.list[i].sys.country +'</h3>' +
             '<h4 class="card-title text-center">'+ result.list[i].weather[0].description+'</h4>' +
             '<p class="card-text"> </p>' +
             '</div> </div>'
